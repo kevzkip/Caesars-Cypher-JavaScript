@@ -14,7 +14,7 @@ function caesarCipher(text, shift) {
         }
         // Check if the character is a digit
         else if (/[0-9]/.test(char)) {
-            // Apply the Caesar Cipher formula for digits
+            // Apply the Caesar Cipher formula for the digits
             result += String.fromCharCode((char.charCodeAt(0) - '0'.charCodeAt(0) - shift + 10) % 10 + '0'.charCodeAt(0));
         }
         // Preserve non-alphabetic and non-digit characters
